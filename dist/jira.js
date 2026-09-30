@@ -7,9 +7,9 @@ exports.updateDescription = exports.moveTask = exports.getTaskDescription = expo
 const axios_1 = __importDefault(require("axios"));
 const node_buffer_1 = require("node:buffer");
 // HARDCODED CONFIGURATION - Replace with your actual credentials
-const JIRA_BASE_URL = 'https://shaileshjalan19.atlassian.net';
-const JIRA_EMAIL = 'shaileshjalan19@gmail.com';
-const JIRA_API_TOKEN = 'ATATT3xFfGF0q-B1R8cEBu-SfZ6ih-2A16ftGDek6cMO78l6aXYG8PGrephQlaKys1bAGQwmJQbfdGxRoAzYl_YCDoerdV_r6VQ1zf6r2AJzMKZiaK9VrKaHnuVtK6MIMWBrFGgWIzMg2rgdEc-DSpAHzx8bXDkEsAxaINSYIEdbbl01524x-yA=D1EB66FE';
+const JIRA_BASE_URL = '';
+const JIRA_EMAIL = ';
+const JIRA_API_TOKEN =';
 console.log('Jira Base URL initialized to:', JIRA_BASE_URL);
 const auth = node_buffer_1.Buffer.from(`${JIRA_EMAIL}:${JIRA_API_TOKEN}`).toString('base64');
 const jiraInstance = axios_1.default.create({
