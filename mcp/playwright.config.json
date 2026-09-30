@@ -1,0 +1,22 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "headless": false
+    },
+    "contextOptions": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    }
+  },
+  "capabilities": ["core", "pdf"],
+  "outputDir": "./mcp/output",
+  "timeouts": {
+    "action": 10000,
+    "navigation": 60000
+  },
+  "imageResponses": "allow"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "jira-automation",
+  "version": "1.0.0",
+  "description": "Playwright JavaScript tests with Playwright MCP for Cursor",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "codegen": "playwright codegen",
+    "mcp": "npx -y @playwright/mcp@latest --config ./mcp/playwright.config.json"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "@types/node": "^26.6.3",
+    "axios": "^1.20.0",
+    "dotenv": "^16.6.1",
+    "playwright": "^1.63.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
